@@ -1,0 +1,9 @@
+
+# configuration file with private Keys
+config.js
+
+# tree -I node_modules > myTree.txt
+myTree.txt
+
+# my own test files
+.to_ignore
