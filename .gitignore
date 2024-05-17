@@ -1,6 +1,6 @@
 
-# configuration file with private Keys
-config.js
+# configuration file with private Keys and private toolbox
+_ignore
 
 # tree -I node_modules > myTree.txt
 myTree.txt

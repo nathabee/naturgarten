@@ -20,7 +20,7 @@ body {
 
 
 .container {
-    max-width: 800px;
+    max-width: 80%;
     margin: auto;
     background:  #D0F0C0; /* Helle Pistazien-Grünfarbe */
     padding: 20px;
@@ -136,17 +136,21 @@ nav {
 }
 
 .gallery, .photo-gallery {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; 
     justify-content: space-between;
-    max-width: 75vw; /* Adjust the width of the gallery */
+    max-width: 100vb; /* Adjust the width of the gallery */
     margin: 0 auto;
 }
 
 .gallery img, .photo-gallery img {
-    width: calc(25% - 10px); /* Adjust the width of the images */
-    margin-bottom: 20px;
+    width: calc(100% - 10px); /* Adjust the width of the images */
+    /* margin-bottom: 20px; */
+    max-height: 80%;
 }
+
+
+
+
 .slideshow-container {
     position: relative;
     width: 50%; /* Adjust the width as needed */
@@ -159,8 +163,8 @@ nav {
 }
 
 .slides img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 60vh;
 }
 
  
@@ -246,22 +250,7 @@ html {
  
 /*#####################################################*/
  
-/* CSS for image carousel */
- /*
-carousel-container {
-    position: relative;
-    max-width: 50%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;  
-    align-items: center; 
-}
-
-.carousel-container img {
-    max-width: 30%;  
-    display: none;
-    height: auto;  
-}*/
+ 
 
 .carousel-container {
     position: relative;
@@ -293,73 +282,3 @@ carousel-container {
     text-align: center;
 }
 
-
-
-/*##############################################################*/
-/*  Animation example */
-    /* Styling for the hover animation */
-    .hover-animation {
-        width: 200px;
-        height: 200px;
-        background-color: #3498db;
-        color: #fff;
-        text-align: center;
-        line-height: 200px;
-        font-size: 18px;
-        transition: transform 0.3s ease;
-    }
-
-    .hover-animation:hover {
-        transform: scale(1.1);
-    }
-
-    /* Styling for the button animation */
-    .button-animation {
-        padding: 10px 20px;
-        font-size: 16px;
-        background-color: #2ecc71;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: transform 0.2s ease;
-    }
-
-    .button-animation:active {
-        transform: scale(0.95);
-    }
-
-    @keyframes customCursorAnimation {
-        0% { transform: scale(1); }
-        50% { transform: scale(1.2); }
-        100% { transform: scale(1); }
-    }
-
-    .custom-cursor {
-        width: 30px;
-        height: 30px;
-        background-color: #ff5722;
-        border-radius: 50%;
-        position: fixed;
-        top: -15px;
-        left: -15px;
-        pointer-events: none; /* This ensures that the cursor does not interfere with the mouse events */
-        animation: customCursorAnimation 1s infinite;
-        z-index: 9999; /* Ensure the cursor appears on top of other elements */
-        cursor: none; /* Hide the default cursor */
-    }
-
-    /* Example of changing the cursor on hover */
-    .hover-container {
-        width: 200px;
-        height: 200px;
-        background-color: #f1c40f;
-        margin-top: 100px;
-        text-align: center;
-        line-height: 200px;
-        position: relative;
-    }
-
-    .hover-container:hover {
-        cursor: url('../assets/bee.png'), auto; /* Replace 'path/to/your-custom-cursor.png' with the path to your custom cursor image */
-    }

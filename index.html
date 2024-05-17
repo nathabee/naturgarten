@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naturgarten-Wetter</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="./config.js"></script>
     <script src="./scripts/main.js" defer></script>
 
 
@@ -20,15 +19,13 @@
 
 <body>
 
-    <div>
 
     <header class="topheader" style="background-image: url('./assets/rittersporn.jpg')">
         <h1>Willkommen in meiner Naturgarten-Welt</h1>
         <!-- Icon container -->
     </header>
 
-</div>
-<div>
+
 
     <nav>
         <a href="#home">Home</a>
@@ -36,24 +33,17 @@
         <a href="#contact">Kontakt</a>
         <a href="#tipps">Tipps</a>
     </nav>
-</div>
-<div>
-    <!-- Add empty div for space -->
-    <div class="space"> </div>
 
-    <div class="icon-container" style="position: absolute;min-height: 500px;"> 
+    <div class="icon-container" style="position: absolute;min-height: 500px;">
         <img src="./assets/frog/frog-set3_100_300.png" alt="frog-set3.0" class="scroll-icon"
             style="position: relative;width: 56px">
         <img src="./assets/frog/frog-staple_1.png" alt="frog-staple.0" class="stapple-icon "
             style="position: relative;width: 56px;min-height: 500px;">
+    </div>
 
-            <hr class="custom-line">
 
-            </div>
-          
-        </div>
-        <div>
-
+    <!-- Add empty div for space -->
+    <div class="space"> </div>
 
     <div class="main-content">
 
@@ -162,18 +152,14 @@
     </div>
 
     <!-- Add empty div for space -->
-    <div class="space"> </div>
+    <!-- div class="space"> </div -->
     <!-- Icon container -->
-    <div class="icon-container"  style="position: absolute;min-height: 500px;">
+    <div class="icon-container" style="position: absolute;min-height: 500px;">
         <img src="./assets/frog/frog-set_100_300.png" alt="frog-set.1" class="scroll-icon"
             style="position: relative;width: 56px">
 
-            <hr class="custom-line">
+        <!-- hr class="custom-line" -->
     </div>
-
-  
-
-
 
     <div class="gestaltung-content">
         <section id="Gestaltung">
@@ -378,67 +364,9 @@
                             schaffen wir viele unberührte Ecken und ruhige Orte.</p>
 
 
-                            
-                        <!-- Image carousel container -->
-                        <div class="carousel-container">
-                            <!-- Carousel images -->
-                            <div class="image-container">
-                                <img src="./assets/ackerhummel.jpg" alt="Ackerhummel">
-                                <div class="overlay">
-                                    <h3>Ackerhummel</h3>
-                                    <p>Foto Datum: [Datum]</p>
-                                    <p>Beschreibung des Bildes: [Beschreibung]</p>
-                                </div>
-                            </div>
 
-                            <div class="image-container">
-                                <img src="./assets/fliege.jpg" alt="Fliege">
-                                <div class="overlay">
-                                    <h3>Fliege</h3>
-                                    <p>Foto Datum: [Datum]</p>
-                                    <p>Beschreibung des Bildes: [Beschreibung]</p>
-                                </div>
-                            </div>
 
-                            <div class="image-container">
-                                <img src="./assets/gartenhummel.jpg" alt="Gartenhummel">
-                                <div class="overlay">
-                                    <h3>Gartenhummel</h3>
-                                    <p>Foto Datum: [Datum]</p>
-                                    <p>Beschreibung des Bildes: [Beschreibung]</p>
-                                </div>
-                            </div>
 
-                            <div class="image-container">
-                                <img src="./assets/marienkaefer.jpg" alt="Marienkäfer">
-                                <div class="overlay">
-                                    <h3>Marienkäfer Larva</h3>
-                                    <p>Foto Datum: [Datum]</p>
-                                    <p>Beschreibung des Bildes: [Beschreibung]</p>
-                                </div>
-                            </div>
-
-                            <div class="image-container">
-                                <img src="./assets/erdhummel.jpg" alt="Erdhummel">
-                                <div class="overlay">
-                                    <h3>Erdhummel</h3>
-                                    <p>Foto Datum: [Datum]</p>
-                                    <p>Beschreibung des Bildes: [Beschreibung]</p>
-                                </div>
-                            </div>
-
-                            <div class="image-container">
-                                <img src="./assets/wanzen.jpg" alt="Wanzen">
-                                <div class="overlay">
-                                    <h3>Wanzen</h3>
-                                    <p>Foto Datum: [Datum]</p>
-                                    <p>Beschreibung des Bildes: [Beschreibung]</p>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
 
 
             </section>
@@ -446,6 +374,27 @@
 
 
 
+            <h2>Insekten-Galerie</h2>
+            <div class="slideshow-container">
+                <div class="slides fade">
+                    <img src="./assets/ackerhummel.jpg" alt="Ackerhummel">
+                </div>
+                <div class="slides fade">
+                    <img src="./assets/fliege.jpg" alt="Fliege">
+                </div>
+                <div class="slides fade">
+                    <img src="./assets/wanzen.jpg" alt="Wanzen">
+                </div>
+                <div class="slides fade">
+                    <img src="./assets/gartenhummel.jpg" alt="Gartenhummel">
+                </div>
+                <div class="slides fade">
+                    <img src="./assets/marienkaefer.jpg" alt="Marienkäfer">
+                </div>
+                <div class="slides fade">
+                    <img src="./assets/erdhummel.jpg" alt="Erdhummel">
+                </div>
+            </div>
 
 
             <section id="vogel">
@@ -537,14 +486,6 @@
 
             </section>
 
-            <section id="fantasy">
-
-                <div class="mars-photos">
-                    <h2>Mars Rover Photos</h2>
-                    <div class="photo-gallery"></div>
-                    <button id="moreFromNasaBtn">More from NASA</button>
-                </div>
-            </section>
 
 
 
@@ -556,233 +497,22 @@
 
 
 
-    <!-- Add empty div for space -->
-    <div class="space"> </div>
     <!-- Icon container -->
-    <div class="icon-container"  style="position: absolute;min-height: 500px;">
+    <div class="icon-container" style="position: absolute;min-height: 500px;">
         <img src="./assets/frog/frog-black-set_0_200.png" alt="frog-black-set.2" class="scroll-icon"
             style="position: relative;width: 56px;">
         <img src="./assets/frog/frog-staple-black_1.png" alt="frog-staple-black.1" class="stapple-icon "
             style="position: relative;width: 56px;min-height: 500px;">
 
-    <hr class="custom-line">
-    </div> 
-  
-
-
-
-    <div class="tipps-content">
-
-        <section id="tipps">
-
-            <nav>
-                <a href="#TippsEffect">Spezial Effect</a>
-                <a href="#TippsSass">SASS</a>
-                <a href="#TippsDynamics">Make a site more dynamic</a>
-                <a href="#TippsAnimation">Animation</a>
-            </nav>
-            <section id="TippsEffect">
-
-                <h2>CSS Spezialeffekte</h2>
-                hier sind einige interessante Spezialeffekte, die nur mit CSS umgesetzt werden können:
-
-                Hover-Effekte: CSS-Übergänge und Animationen können verwendet werden, um Elemente zu animieren oder ihre
-                Farben, Größen oder Positionen zu ändern, wenn der Benutzer mit der Maus über sie fährt.
-
-                Parallax Scrolling: Durch die Verwendung von CSS-Eigenschaften wie background-attachment: fixed können
-                Sie Parallaxeneffekte erzeugen, bei denen sich Hintergrundbilder langsamer bewegen als
-                Vordergrundinhalte, wenn der Benutzer scrollt.
-
-                Animations: CSS bietet umfangreiche Möglichkeiten zur Erstellung von Animationen, einschließlich
-                Keyframe-Animationen und Übergängen. Diese können verwendet werden, um Elemente auf der Seite zu
-                animieren, z. B. das Ein- und Ausblenden von Texten oder das Schweben von Schaltflächen.
-
-                Scroll-Triggered Animation: Mit CSS können Sie Animationen basierend auf dem Scrollverhalten des
-                Benutzers auslösen. Durch das Hinzufügen von @keyframes und das Definieren von CSS-Klassen können Sie
-                Elemente animieren, wenn sie in den Ansichtsbereich des Benutzers gelangen.
-
-                Sticky Navigation: Durch das Festlegen der Position einer Navigationsleiste auf fixed können Sie eine
-                Sticky-Navigation erstellen, die beim Scrollen der Seite sichtbar bleibt.
-
-                Responsive Layouts: CSS Media Queries ermöglichen es Ihnen, das Layout Ihrer Website basierend auf der
-                Bildschirmgröße des Benutzers anzupassen. Dadurch können Sie eine ansprechende Website erstellen, die
-                auf verschiedenen Geräten gut aussieht und funktioniert.
-
-                Flexbox und Grid: Die CSS-Eigenschaften Flexbox und Grid ermöglichen es Ihnen, komplexe Layouts zu
-                erstellen und Inhalte dynamisch anzuordnen, ohne auf Tabellenlayouts zurückgreifen zu müssen.
-
-                Diese CSS-basierten Spezialeffekte können dazu beitragen, dass Ihre Website ansprechender und
-                interaktiver wird, ohne auf JavaScript oder andere Skriptsprachen angewiesen zu sein.
-            </section>
-
-
-
-            <section id="TippsSass">
-                Sass, which stands for "Syntactically Awesome Style Sheets," is a preprocessor scripting language that
-                is interpreted or compiled into Cascading Style Sheets (CSS). It extends CSS by providing several
-                features that are not available in traditional CSS, such as variables, nesting, mixins, inheritance, and
-                more.
-
-                Here's a brief overview of some key features of Sass:
-
-                Variables: Sass allows you to define variables to store reusable values, such as colors, font sizes, or
-                spacing, making it easier to maintain consistency across your stylesheets.
-
-                Nesting: Sass allows you to nest CSS selectors within one another, which can help improve readability
-                and organization of your stylesheets.
-
-                Mixins: Mixins are reusable blocks of styles that can be included in other selectors. They are useful
-                for applying common patterns or styles to multiple elements.
-
-                Inheritance: Sass supports inheritance, allowing styles to be inherited from one selector to another.
-                This can help reduce repetition and make your stylesheets more maintainable.
-
-                Partials and Imports: Sass allows you to split your stylesheets into smaller, modular files called
-                partials, which can then be imported into other Sass files. This makes it easier to organize and manage
-                large codebases.
-
-                Functions: Sass supports the use of functions, which can be used to perform calculations, manipulate
-                colors, or generate complex styles dynamically.
-
-                Overall, Sass provides a more efficient and powerful way to write CSS, allowing developers to write
-                cleaner, more maintainable stylesheets with less repetition and boilerplate code.
-
-
-            </section>
-
-            <section id="TippsDynamics">
-
-                <h2>make your website content more engaging and dynamic</h2>
-                To make your website content more engaging and dynamic, you can consider the following improvements:
-
-                Break up Long Paragraphs: Divide long paragraphs into smaller, more digestible chunks. This makes the
-                content easier to read and prevents it from feeling monotonous. You can also use headings, bullet
-                points, and numbered lists to organize information.
-
-                Use Visuals: Incorporate more visuals such as images, videos, and infographics to break up the text and
-                make the content more visually appealing. For example, you can include images of your garden, wildlife,
-                and plants mentioned in the text.
-
-                Add Interactivity: Implement interactive elements such as sliders, carousels, and interactive maps to
-                engage users and encourage exploration. For instance, you can create an interactive map highlighting
-                different areas of your garden or a slider showcasing before-and-after images of your garden's
-                transformation.
-
-                Tell Stories: Instead of presenting factual information in a purely descriptive manner, try to weave
-                stories and anecdotes into your content. Personal stories and experiences can captivate readers and make
-                the content more relatable.
-
-                Incorporate Multimedia Content: Include multimedia content such as audio recordings, podcasts, or
-                interviews with experts to provide additional insights and perspectives on gardening, wildlife, and
-                environmental conservation.
-
-                Provide Actionable Tips: Offer practical tips, advice, and DIY projects related to gardening,
-                landscaping, and wildlife conservation. This not only educates your audience but also empowers them to
-                take action in their own gardens.
-
-                Encourage User Engagement: Foster community engagement by encouraging users to share their own gardening
-                experiences, tips, and photos on your website. You can create a dedicated section for user-generated
-                content or integrate social media feeds to showcase user contributions.
-
-                By implementing these strategies, you can transform your website into a vibrant and engaging platform
-                that not only educates visitors about nature and gardening but also inspires them to connect with their
-                environment in meaningful ways.
-
-            </section>
-
-            <section id="TippsAnimation">
-                <p>
-                    There are several types of animations that can be achieved using CSS without the need for a web
-                    server. Some of the common types of animations include:
-
-                    Transition: CSS transitions allow you to smoothly change property values over a specified duration.
-                    You can transition properties such as color, size, position, and more. Transitions are triggered by
-                    changes in state, such as hovering over an element or changing its class.
-
-                    Keyframe Animation: CSS keyframe animations provide more control over the animation sequence. You
-                    define keyframes at specific points in time and specify the properties to animate between those
-                    keyframes. This allows for more complex animations, such as bouncing, rotating, or scaling elements.
-
-                    Transforms: CSS transforms allow you to modify the appearance and position of elements in 2D or 3D
-                    space. You can translate, rotate, scale, skew, and apply perspective transformations to elements.
-                    Transforms can be animated using transitions or keyframe animations.
-
-                    Animations on Scroll: You can trigger animations based on scroll events using CSS and JavaScript.
-                    This allows you to create effects such as parallax scrolling, fade-ins, slide-ins, and more as the
-                    user scrolls down the page.
-
-                    Regarding animations for mouse interactions or button presses with vibration, image changes, or
-                    sound, you can achieve them using CSS animations and JavaScript event handling:
-
-                    Mouse Hover Animations: You can use CSS hover states to trigger animations when the mouse hovers
-                    over an element. For example, you can change the color, size, or position of an element on hover.
-
-                    Button Press Animations: You can use CSS to style buttons and add animations to them. For example,
-                    you can animate the button's background color, border, or box shadow to provide visual feedback when
-                    it's pressed. You can also use JavaScript to handle button click events and trigger animations or
-                    play sounds.
-
-                    Vibration: While CSS alone cannot trigger device vibrations, you can use the Vibration API in
-                    JavaScript to trigger vibrations on supported devices. You can call the navigator.vibrate() method
-                    to create vibrations of specified duration and patterns.
-
-                    Image Changes: You can animate image changes using CSS transitions or keyframe animations. For
-                    example, you can create a slideshow with fading or sliding images, or you can use JavaScript to
-                    dynamically change image sources and trigger CSS transitions.
-
-                    Sound Effects: You can play sound effects in response to user interactions using the Web Audio API
-                    or the HTML5 <audio> element in JavaScript. You can load audio files and play them when specific
-                        events occur, such as button clicks or animations.
-                </p>
-                <!-- Mouse Hover Animation -->
-                <div class="hover-animation">
-                    <p>Hover over me</p>
-                </div>
-
-                <!-- Button Press Animation -->
-                <button class="button-animation">
-                    <img src="./assets/frog/frog-set_400_300.png" alt="Frog"></button>
-
-                <!-- Image Change Animation -->
-                <div class="image-container">
-                    <img src="./assets/bee.png" alt="Bee">
-                </div>
-
-                <!-- Sound Effect -->
-                <button class="sound-button">Play Sound</button>
-
-
-                <!-- Custom Cursor -->
-                <div class="custom-cursor"></div>
-
-                <!-- Example of changing cursor on hover -->
-                <div class="hover-container">
-                    Hover over me to change cursor
-                </div>
-            </section>
-        </section>
-
+        <hr class="custom-line">
     </div>
-
-
- 
 
     <!-- Add empty div for space -->
     <div class="space"> </div>
 
 
-    <!-- Icon container -->
-    <div class="icon-container"  style="position: absolute;min-height: 500px;">
-        <img src="./assets/frog/frog-set_100_300.png" alt="frog-set.1" class="scroll-icon"
-            style="position: relative;width: 56px;"> 
-        </div>
-
-    <hr class="custom-line">
-    </div>
 
 
-
- 
 
 
     <div class="contact-content">
@@ -797,10 +527,26 @@
             </ul>
             <h2>Kontakt</h2>
             <p>Du möchtest mehr erfahren oder hast Fragen? Kontaktiere mich gerne!</p>
-            <p>E-Mail: deine@email.com</p>
-            <p>Telefon: +49 123 456789</p>
+            <p>E-Mail: nathabee@gmail.com</p>
         </section>
     </div>
+
+
+    <!-- Add empty div for space -->
+    <div class="space"> </div>
+
+
+    <!-- Icon container -->
+    <div class="icon-container" style="position: absolute;min-height: 500px;">
+        <img src="./assets/frog/frog-set_100_300.png" alt="frog-set.1" class="scroll-icon"
+            style="position: relative;width: 56px;">
+    </div>
+
+    <hr class="custom-line">
+    </div>
+
+
+
 
 </body>
 

@@ -72,65 +72,7 @@ window.addEventListener('scroll', handleScroll);
 
 document.addEventListener("DOMContentLoaded", function () {
 
-
-
-    //#############################################################################
-    // code for API To NASA and bilder in galeery
-
-    const API_URL = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=100&page=1&per_page=4&api_key=${API_KEY}`;
-
-    const photoGallery = document.querySelector('.photo-gallery');
-    let currentPage = 1;
-    const photosPerPage = 4;
-
-    // Function to fetch Mars rover photos from the API
-    function fetchMarsRoverPhotos(page) {
-        const url = `${API_URL}&page=${page}&per_page=${photosPerPage}`;
-
-        fetch(url)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(data => {
-                displayMarsPhotos(data.photos);
-            })
-            .catch(error => {
-                console.error('Error fetching Mars rover photos:', error);
-                // Handle errors, e.g., display an error message to the user
-            });
-    }
-
-    // Function to display Mars rover photos
-    function displayMarsPhotos(photos) {
-        // Clear existing photos
-        photoGallery.innerHTML = '';
-
-        photos.forEach(photo => {
-            const img = document.createElement('img');
-            img.src = photo.img_src;
-            img.alt = 'Mars Rover Photo';
-            img.classList.add('mars-photo');
-            photoGallery.appendChild(img);
-        });
-    }
-
-    // Function to handle click on "More from NASA" button
-    function handleMoreFromNasaClick() {
-        currentPage++;
-        fetchMarsRoverPhotos(currentPage);
-    }
-
-    // Call the fetchMarsRoverPhotos function to fetch and display initial photos
-    fetchMarsRoverPhotos(currentPage);
-
-    // Attach click event listener to "More from NASA" button
-    const moreFromNasaBtn = document.getElementById('moreFromNasaBtn');
-    moreFromNasaBtn.addEventListener('click', handleMoreFromNasaClick);
-
-
+ 
 
     //#############################################################################
     // code for fading the header 
@@ -204,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 setTimeout(() => {
                     requestAnimationFrame(animate);
                     icon.style.opacity = 1;
-                }, 3000); //   delay at end stappel
+                }, 1500); //   delay at end stappel
                  
 
             }
@@ -297,7 +239,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
+    //#######################################################################
+    // slideshowcontainer
 
+    function initializeSlideshow(container) {
+        let slideIndex = 0;
+        const slides = container.getElementsByClassName("slides");
+        showSlides();
+    
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 5 seconds
+        }
+    }
+    const containers = document.getElementsByClassName("slideshow-container");
+    for (let i = 0; i < containers.length; i++) {
+        initializeSlideshow(containers[i]);
+    }
 
 
     //#######################################################################
@@ -321,47 +284,15 @@ document.addEventListener("DOMContentLoaded", function () {
         showImage(cIndex);
     }
 
-    setInterval(nextImage, 3000); // Change image every 3 seconds
+    setInterval(nextImage, 2000); // Change image every x milliseconds
 
-    //###############################################################################
-    // code to test animation tipps
-    // Mouse Hover Animation
-    const hoverElement = document.querySelector('.hover-animation');
-    hoverElement.addEventListener('mouseover', function () {
-        hoverElement.classList.add('animate');
-    });
-    hoverElement.addEventListener('mouseout', function () {
-        hoverElement.classList.remove('animate');
-    });
-
-    // Button Press Animation
-    const buttonElement = document.querySelector('.button-animation');
-    buttonElement.addEventListener('mousedown', function () {
-        buttonElement.classList.add('animate');
-    });
-    buttonElement.addEventListener('mouseup', function () {
-        buttonElement.classList.remove('animate');
-    });
-
-    // Image Change Animation
-    const imageContainer = document.querySelector('.image-container');
-    const images = ['./assets/frog/frog-black-set_100_100.png', './assets/frog/frog-black-set_100_200.png', './assets/frog/frog-black-set_100_300.png'];
-    let currentIndex = 0;
-    imageContainer.addEventListener('click', function () {
-        currentIndex = (currentIndex + 1) % images.length;
-        imageContainer.querySelector('img').src = images[currentIndex];
-    });
-
-    // Sound Effect
-    const soundButton = document.querySelector('.sound-button');
-    const audio = new Audio('./assets/mp3/frog.mp3'); // Replace 'sound.mp3' with your sound file
-    soundButton.addEventListener('click', function () {
-        audio.play();
-    });
+    
 });
 
 //###############################################################
 // show bilder as 
+
+/*
 var slideIndex = 0;
 showSlides();
 
@@ -376,8 +307,8 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
+*/
 
 
-
-
+ 
 
